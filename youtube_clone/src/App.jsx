@@ -9,7 +9,7 @@ rafce
 import { Navbar, Feed, VideoDetail, ChannelDetail, SearchFeed} from './components/Index.js';
 
 
-const App = () => (
+export function App() {
     <BrowserRouter>
         <Box sx={{backgroundColor:'#000'}}>
             Navbar
@@ -24,7 +24,7 @@ const App = () => (
             </Routes>
         </Box>
     </BrowserRouter>
-);
+};
    
 
 export default App;
