@@ -1,5 +1,5 @@
 {
-  "name": "youtube_clone",
+  "name": "01-fundamentos-reactjs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,12 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
-    "@mui/material": "^5.11.11",
+    "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.2"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
