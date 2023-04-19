@@ -1,0 +1,44 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 46px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logoTitle{
+    font-family: var(--font-poppins);
+    font-size: 2rem;
+}
+
+/* Navbar */
+
+.navbarList{
+    list-style-type: none;
+    display: flex;
+    gap: 56px;
+}
+
+.navbarListItem{
+    font-family: var(--font-poppins);
+    font-size: 1.5rem;
+}
+
+/* Search and Shopp*/
+
+.search{
+    text-align: center;
+    width: 314px;
+    height: 64px;
+    border: none;
+    border-radius: 30px;
+    background: url('./assets/lupe.svg') no-repeat;
+    background-position: 1.25rem;
+    background-position-y: 1.25rem ;
+    box-shadow: 0px 12px 20px -10px var(--black-010);
+}

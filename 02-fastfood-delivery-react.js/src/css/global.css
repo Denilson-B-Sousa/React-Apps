@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@600&family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+    --white: #F4ECE1;
+    --black: #000000;
+    --black-010: #00000053;
+    --background: linear-gradient(304.58deg, #F4ECE1 57.1%, #FCFBF7 145.5%);
+    --red: #EC2633;
+    --orange:#FF7E00;
+    --dark-orange: #FEBB41;
+    --dark-blue: #1E2833;
+    --gray-900: #2F2F2F;
+    --light-green: #008F17;
+    --font-poppins: 'Poppins';
+    --font-inter: 'Inter';
+    --font-MontSerrat: 'MontSerrat'
+}
+
+body{
+    background: var(--background);
+}
