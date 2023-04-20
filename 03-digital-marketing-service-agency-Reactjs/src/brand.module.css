@@ -5,10 +5,17 @@
 .brandTitle{
     font-family: var(--main-font);
     color: var(--white);
+    margin-bottom: 48px;
 }
 
-.brands{
+.cards{    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    margin-bottom: 20px;
     width: 230px;
-    height: 100px;
-    background: var(--gray-900);
+    height: 115px;
+    background-color: var(--black-400);
+    border-radius: 8px;
 }
