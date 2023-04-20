@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black-900);
+    color: var(--white);
+    font-family: var(--main-font);
+    padding-top: 36px;
+}
+
+
+.containerTitle{
+    margin-left: 8%;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.menuLink{
+    color: var(--white);
+    text-decoration: none;
+}
+
+strong{
+    color: var(--green-400);
+}
+
+/* Navbar */
+
+
+.navbarList{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    font-weight: 400;
+}
+
+.navbarListItem{
+    cursor: pointer;
+}
+
+.navbarListItem:hover{
+    text-decoration: underline solid var(--green-400) 2px;
+    
+}
+
+/* CTA - Button */
+
+.button{
+    background-color: var(--green-200);
+    color: var(--gray-900);
+    font-weight: bold;
+    width: 147px;
+    height: 47px;
+    margin-right: 48px;
+    border: none;
+    border-radius: 50px;
+}

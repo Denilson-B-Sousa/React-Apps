@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --black-900: #0D0D0D;
+    --white: #ffffff;
+    --white-900: #E8CCE8;
+    --green-100: #3DD47E;
+    --green-200: #00CA6F;
+    --green-400: #2BA085;
+    --green-300: #2DCA72;
+    --purple-100: #825EEE;
+    --blue: #00397A;
+    --dark-blue: #282A5B;
+    --light-blue: #89D3DE;
+    --light-blue-100: #77C9AD;
+    --gray-900: #262626;
+    --red: #DE353A;
+    --red-100: #F5594E;
+    --pink: #E43468;
+    --yellow: #FFC721;
+    --yellow-900: #FF761B;
+    --yellow-400: #FFC721;
+    --main-font: 'Rubik';
+}
+
+body{
+    background-color: var(--black-900);
+}

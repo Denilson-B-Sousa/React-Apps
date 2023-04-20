@@ -1,0 +1,14 @@
+.brandSection{
+    margin-left: 8%;
+}
+
+.brandTitle{
+    font-family: var(--main-font);
+    color: var(--white);
+}
+
+.brands{
+    width: 230px;
+    height: 100px;
+    background: var(--gray-900);
+}

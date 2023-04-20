@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: var(--black-900);
+    color: var(--white);
+    
+}
+
+.heroInfo{
+    width: 680px;
+    margin-left: 8%;
+}
+
+.heroTitle{
+    font-family: var(--main-font);
+    font-size: 3.75rem;
+    font-weight: 600;
+}
+
+.heroText{
+    width: 640px;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+
+}
+
+.heroImage{
+    margin-right: 15%;
+    margin-bottom: 2%;
+}
