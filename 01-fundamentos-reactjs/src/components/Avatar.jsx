@@ -1,6 +1,6 @@
 import styles from '../../src/Avatar.module.css'
-export function Avatar(props){
+export function Avatar({hasBorder = false, src}){
     return (
-        <img  src={props.src} className={styles.avatar}/>
+        <img  src={src} className={hasBorder ? styles.avatarWithBorder : styles.avatar}/>
     )
 }
