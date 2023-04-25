@@ -1,6 +1,6 @@
 
 import styles from '../brand.module.css'
-import { Cards } from './Cards'
+import { Brands } from './Brands'
 
 export function Brand(){
 
@@ -13,7 +13,7 @@ export function Brand(){
         {
             src: '../src/assets/allianz.svg',
             width: '112.46px',
-            height: '28.89px'
+            height: '20px'
         }, 
         {
             src: '../src/assets/chase.svg',
@@ -34,8 +34,8 @@ export function Brand(){
     return(
         <section className={styles.brandSection}>
             <h3 className={styles.brandTitle}>Featured In  | <strong> Our Certification</strong></h3>
-           {datas.map(data => <Cards
-                key= {data.src}
+           {datas.map(data => <Brands
+                key = {data.src}
                 src= {data.src}
                 width = {data.width}
                 height = {data.height}

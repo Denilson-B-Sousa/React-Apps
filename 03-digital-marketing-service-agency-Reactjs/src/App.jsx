@@ -1,6 +1,6 @@
 
 import './App.module.css'
-import { Brand } from './components/Brand'
+import { Brands } from './components/Brands'
 import { Header } from './components/Header'
 import { LandingPage } from './components/LandingPage'
 
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
         <Header/>
         <LandingPage/>
-        <Brand/>
+        <Brands/>
         
     </div>
   )

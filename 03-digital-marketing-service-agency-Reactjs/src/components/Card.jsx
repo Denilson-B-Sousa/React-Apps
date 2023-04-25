@@ -1,8 +1,9 @@
 
-export function Cards(){
+
+export function Card(){
     return(
         <section>
-
+            
         </section>
     )
-}       
+}
