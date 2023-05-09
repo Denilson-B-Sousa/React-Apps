@@ -1,4 +1,3 @@
-import { defaultTheme } from './themes/default';
 import {createGlobalStyle} from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle` //Criando css global da aplicação
@@ -14,7 +13,7 @@ export const GlobalStyle = createGlobalStyle` //Criando css global da aplicaçã
     }
 
     body{
-        background: ${props => props.theme['gray-900']};
+        background: ${props => props.theme['gray-800']};
         color: #fff;
     }
 

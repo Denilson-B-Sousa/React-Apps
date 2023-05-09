@@ -13,10 +13,10 @@ function App() {
         <BrowserRouter>
             <Router/>
         </BrowserRouter>
-        <Button variant="primary"/>
+        {/* <Button variant="primary"/>
         <Button variant="secondary"/>
         <Button variant="danger"/>
-        <Button variant="success"/>
+        <Button variant="success"/> */}
 
         <GlobalStyle/>
       </ThemeProvider>
