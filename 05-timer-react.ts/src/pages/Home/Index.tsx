@@ -1,19 +1,51 @@
 import { Play } from "phosphor-react"
-import { FormContainer, HomeContainer, CountdownContainer, Separator } from "./styles"
+import { useForm } from 'react-hook-form'
+import { FormContainer, HomeContainer, CountdownContainer, Separator, StartCountdownButton, TaskInput, MinutesAmountInput } from "./styles"
+
 export function Home() {
+
+    const { register, handleSubmit } = useForm()
+
+    /* (data) --> Dados do nosso formulário */
+
+    function handleCreateNewCycle(data: any) {
+        console.log(data)
+    }
+
     return (
         <HomeContainer>
-            <form action="">
+            <form action="" onSubmit={handleSubmit(handleCreateNewCycle)}>
                 <FormContainer>
-                    <label htmlFor="">Vou trabalhar em</label>
-                    <input id="task"/>
-                    <label htmlFor="">Durante</label>
-                    <input type="number" id="minuteAmunt"/>
+                    <label htmlFor="task">Vou trabalhar em</label>
+                    <TaskInput 
+                        id="task" 
+                        placeholder="Nome do projeto"
+                        list="task-suggestions"
+                        {...register('task')} /*Função que retorna métodos para trabalhar com inputs ex: Onchange, onBlur, onFocus, onSubmit */
+                    />
+                    
+                    <datalist id="task-suggestions">
+                        <option value="Projeto 1"/>
+                        <option value="Projeto 2"/>
+                        <option value="Projeto 3"/>
+                        <option value="Projeto 4"/>
+
+                    </datalist>
+                    <label htmlFor="minuteAmount">Durante</label>
+                    <MinutesAmountInput 
+                        type="number" 
+                        id="minuteAmunt" 
+                        placeholder="00"
+                        step={5}
+                        min={5}
+                        max={90}
+                        {...register('minutesAmount')}
+                    />
                     <span>Minutos</span>
                 </FormContainer>
             </form>
 
-            <CountdownContainer>
+            <CountdownContainer >
                 <span>0</span>
                 <span>0</span>
                 <Separator>:</Separator>
@@ -21,10 +53,10 @@ export function Home() {
                 <span>0</span>
             </CountdownContainer>
 
-            <button type="submit">
+            <StartCountdownButton type="submit" /*disabled={!task}*/>
                 <Play size={24}/>
                 Começar
-            </button>
+            </StartCountdownButton>
         </HomeContainer>
     )
 }

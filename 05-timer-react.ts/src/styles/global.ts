@@ -15,6 +15,8 @@ export const GlobalStyle = createGlobalStyle` //Criando css global da aplicaçã
     body{
         background: ${props => props.theme['gray-800']};
         color: #fff;
+        width: 100%;
+        height: 100vh;
     }
 
     border-style, input-security, textarea, button{
